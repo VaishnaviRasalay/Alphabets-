@@ -613,6 +613,9 @@ System.out.print(" ");
 System.out.println();
 }
 break;
+    default:
+System.out.println("Enter only Alphabets");
+
 }
 }
 }
