@@ -39,15 +39,26 @@ break;
 
 case 66:
 //B
-for (int i = 0; i < 5; i++) {
-for (int j = 0; j < 4; j++) {
-                if ((i == 0 || i == 2 || i == 4) || (j == 0 && (i != 0 && i != 2 && i != 4)) || (j == 3 && (i != 0 && i != 2 && i != 4)))
-                    System.out.print("* ");
-                else
-                    System.out.print("   ");
-            }
-            System.out.println();
-        }System.out.println();
+for(int i=1;i<=n;i++)
+{
+for(int j=1;j<=n;j++)
+{
+if((i==1||i==n-1||i==n/2)&&j<(n-2))
+{
+System.out.print("*");
+}
+else if(j==(n-2)&&!(i==1||i==n-1||i==n/2))
+{
+System.out.print("*");
+}
+else
+{
+System.out.print("  ");
+}
+}
+System.out.println();
+}
+System.out.println();
 break;
 
 
